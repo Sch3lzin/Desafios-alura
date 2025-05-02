@@ -33,3 +33,28 @@ function alterarStatus(id) {
 
     console.log(`Jogos alugados: ${jogosAlugados.join(', ')}`);
 }
+
+function verificarPalavra(palavra) {
+    let palavraInvertida = palavra.split('').reverse().join('');
+
+    if (palavraInvertida === palavra) {
+        console.log("A palavra é um palíndromo!");
+    } else {
+        console.log("A palavra não é um palíndromo!");
+    }
+}
+
+verificarPalavra("mirim");
+
+function crescente(a, b, c) {
+    let numbers = [a, b, c];
+
+    numbers.sort(function(x, y){
+        return x - y;
+    });
+
+    return numbers;
+}
+
+let organizar = crescente(15, 123, 9);
+console.log(`Numeros em forma crescente: ${organizar}`);
