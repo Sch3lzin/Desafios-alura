@@ -36,7 +36,7 @@
         <section class="parte-inferior">
           <label class="campo-grupo">
             <span class="texto-medio-azul">Qtde.</span>
-            <input class="quantidade-input" id="quantidade" type="number" placeholder="100">
+            <input class="quantidade-input" id="quantidade" type="number" placeholder="100" min="1" max="100"/>
           </label>
 
           <section class="botoes-wrapper">
@@ -55,16 +55,15 @@
         <h2 class="carrinho__titulo">Produtos no carrinho</h2>
       </div>
 
-      <section class="carrinho__produtos" id="lista-produtos">
-        <section class="carrinho__produtos__produto">
-          <span class="texto-azul">1x</span> Celular <span class="texto-azul">R$1400</span>
+      <section class="carrinho__produtos">
+        <section class="carrinho__produtos__produto" id="lista-produtos">
         </section>
       </section>
 
       <div class="divisoria"></div>
 
       <p class="carrinho__total">
-        Total: <span class="texto-azul" id="valor-total">R$1400</span>
+        Total: <span class="texto-azul" id="valor-total">R$0.00</span>
       </p>
     </section>
   </main>
