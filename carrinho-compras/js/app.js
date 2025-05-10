@@ -15,7 +15,7 @@ function adicionar() {
 
     // Bloquear ação se nao tiver quantidade ou maior que 100
 
-    if ( quantidade === "" || quantidade === 0 ) {
+    if ( isNaN(quantidade) || quantidade <= 0 ) {
         alert('Por favor, informe a quantidade.');
         return;
     }
