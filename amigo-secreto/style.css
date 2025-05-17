@@ -148,6 +148,10 @@ body {
   text-decoration-line: underline;
 }
 
+.form__remove {
+  color: #00f4bf;
+}
+
 .page__image {
   position: absolute;
   right: 0;
