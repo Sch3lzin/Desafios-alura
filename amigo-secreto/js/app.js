@@ -24,7 +24,7 @@ function adicionar() {
 
 function sortear() {
     // Barrar
-    if (nameAmigosID <= 2) {
+    if (nameAmigosID < 2) {
         alert("Número de amigos insuficiente");
         return;
     }
